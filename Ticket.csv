@@ -1,0 +1,51 @@
+Cust_Id,Name,Date of travel,Departure,SeatNo,Free Luggage,FlighID
+1,Lesya Coalbran,10/28/2021,Al Fandaqūmīyah,E1,FALSE,AE6770
+2,Townie Lauridsen,04-05-2021,Santana do Paraíso,E1,FALSE,AI456
+3,Reine Dubble,05-05-2021,Sridadi,E2,FALSE,AI456
+4,Henrietta McKeighan,2/26/2021,Langádhia,E3,FALSE,AI456
+5,Fredrika Tighe,3/17/2021,Nowe Grocholice,E4,FALSE,AE6770
+6,Harwell Wringe,4/19/2021,Ekimchan,E5,TRUE,AE6770
+7,Mattias Groves,04-12-2021,Selínia,E6,FALSE,AE6770
+8,Dwain Dronsfield,3/17/2021,Rendeng,E4,FALSE,BT598
+9,Marrilee Manssuer,05-08-2021,Jiuting,E5,TRUE,BT598
+10,Berrie Pfiffer,08-03-2021,El Coco,E4,TRUE,AI456
+11,Salem Blackly,12-08-2021,Ngromo,E5,FALSE,AI456
+12,Dolly Heaselgrave,04-12-2021,Wrząsowice,E10,TRUE,AE6770
+13,Keely Litchmore,10/18/2021,Brok,E7,TRUE,AI456
+14,Katti Halfhyde,3/16/2021,Anliang,B2,FALSE,AE6770
+15,Onfre Ebertz,02-08-2021,Samothráki,B1,TRUE,AI456
+16,Cyndy O'Codihie,01-02-2022,Tranca,B2,FALSE,BT598
+17,Susann Lapree,08-07-2021,Heitan,B3,TRUE,AI456
+18,Cosette Gilford,11/13/2021,Xushuguan,B4,FALSE,AI456
+19,Jazmin Vasile,11/23/2021,Banjar Jambe Baleran,B4,FALSE,AE6770
+20,Gerardo Costi,08-08-2021,Jinhua,B4,FALSE,BT598
+21,Mikel Dewar,6/13/2021,Baoshan,B5,FALSE,AE6770
+22,Andriana Alywen,10/20/2021,Talisay,B8,TRUE,AI456
+23,Harp Spadeck,8/23/2021,Orléans,B5,TRUE,BT598
+24,Lida Barkshire,05-01-2021,Laizhou,B7,TRUE,AE6770
+25,Emmalynne Trunkfield,01-06-2022,Malhão,B6,TRUE,BT598
+26,Mathew Felderer,5/23/2021,Kodra,B10,TRUE,AE6770
+27,,,,,,
+28,,,,,,
+29,,,,,,
+30,,,,,,
+31,,,,,,
+32,,,,,,
+33,,,,,,
+34,,,,,,
+35,,,,,,
+36,,,,,,
+37,,,,,,
+38,,,,,,
+39,,,,,,
+40,,,,,,
+41,,,,,,
+42,,,,,,
+43,,,,,,
+44,,,,,,
+45,,,,,,
+46,,,,,,
+47,,,,,,
+48,,,,,,
+49,,,,,,
+50,,,,,,
