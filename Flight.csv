@@ -1,0 +1,51 @@
+Flight_ID,Departure_place,Arrival_city,Flight_No,Time_Planned,Price
+AI456,Plottier,Lebak Timur,5699,3 Hrs,200
+BT598,Tampa,Ferreiras,1011,5 Hrs,250
+BT598,Kafr Şūr,Bor,2775,6 Hrs,300
+AE6770,US,Germany,5699,14 Hrs,300
+AI456,Xietang,Xhafzotaj,1011,3 Hrs,200
+AI456,Stockholm,Carregal,5699,5 Hrs,250
+AE6770,US,Mikró Monastíri,2775,6 Hrs,300
+AI456,Yingcheng,Sharīfābād,5699,10 Hrs,350
+BT598,Al Qadmūs,Xiaosong,1011,3 Hrs,200
+AI456,Airmadidi,Yasynuvata,1011,5 Hrs,250
+AE6770,US,Aix-en-Provence,2775,6 Hrs,300
+BT598,Isdalstø,Tyrnyauz,2775,10 Hrs,350
+AE6770,US,Jinjiang,1011,3 Hrs,200
+AE6770,US,Germany,5609,11 Hrs,250
+AI456,Madison,Tiniguiban,1011,6 Hrs,300
+BT598,Pakapasan Girang,Curanilahue,5699,10 Hrs,350
+AE6770,US,Kinsealy-Drinan,2775,3 Hrs,200
+AI456,Parakanhonje Wetan,Adorjan,2775,5 Hrs,250
+AE6770,US,Germany,2775,10 Hrs,220
+AE6770,US,Czarne,2775,10 Hrs,350
+AE6770,US,Kemuning,5699,3 Hrs,200
+BT598,Esik,Matangshan,2775,5 Hrs,350
+AI456,Mawu,Bagroy,5699,6 Hrs,250
+AI456,Strömstad,Vitebsk,5699,10 Hrs,250
+AE6770,US,Sukamaju Kidul,2775,3 Hrs,200
+AI456,Isidro Fabela,Morris,2775,5 Hrs,250
+AI456,Karlivka,Fushan,5699,6 Hrs,300
+AI456,Lanxi,Sattahip,5699,10 Hrs,350
+BT598,Jiangkou,Novyy Karachay,5699,3 Hrs,350
+BT598,La Quebrada,Paso de Carrasco,1011,5 Hrs,250
+AE6770,US,Germany,2775,18 Hrs,250
+AI456,Isangel,Barranquilla,1011,10 Hrs,350
+AI456,Narita,Saint Andrews,5699,3 Hrs,350
+AE6770,US,Uddevalla,2775,5 Hrs,250
+AE6770,US,Riofrío,5699,6 Hrs,300
+AE6770,US,Boroon,5699,10 Hrs,350
+BT598,Quilino,Aix-en-Provence,2775,3 Hrs,250
+AI456,Lebak,Huanoquite,5699,5 Hrs,250
+AE6770,US,Germany,2775,13 Hrs,290
+BT598,Peristerá,Hegarsari,5699,10 Hrs,250
+BT598,Stryszawa,Tečovice,2775,3 Hrs,250
+AE6770,US,Dno,1011,5 Hrs,250
+BT598,São Paio de Seide,Keluke,1011,6 Hrs,300
+BT598,Lusambo,Gandong,5699,10 Hrs,300
+AE6770,US,Germany,5679,14:30 Hrs,200
+AI456,Huangshui,Jimusa’er,1011,5 Hrs,250
+AE6770,US,Sumurber,2775,6 Hrs,300
+BT598,Hadāli,Covas,1011,10 Hrs,300
+AE6770,US,Germany,2775,19 Hrs,270
+AI456,Calauan,Kuala Lumpur,1011,5 Hrs,250
