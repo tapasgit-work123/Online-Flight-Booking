@@ -1,0 +1,96 @@
+### Upgrading ###
+
+
+//switching to upgrading database
+
+use Upgrading
+
+//query to fetch available business class seats
+
+db.Seat_Plan.aggregate([{
+$match:
+{
+$and:
+[{"Flight ID": "AE6770"},{"Seat availability": "Yes"},{"Seat No":  /B/}]
+}},
+{
+$project:
+{ "Seat No": 1 }},
+{
+$out: "Availableseats"
+}
+])
+
+//check newly created collection
+
+db.Availableseats.find()
+
+//To fetch customers travelling in economy class
+
+db.Ticket.aggregate([{ 
+$lookup:
+        {
+           from: "Customer",
+           localField: "Cust_Id",
+           foreignField: "Cust_Id",
+           as: "Customer_ID"
+        }},
+{   
+        $match: 
+        {
+            "Customer_ID.Gender": "Female","FlighID" :"AE6770", "SeatNo" : /E/
+       }
+
+    },
+{
+$project:
+{ 
+"Name": 1, "SeatNo": 1, "Customer_ID.Gender":1, "Cust_Id":1
+}
+},{$out: "Female_in_economyclass" }]).pretty()
+
+//Check Female_in_economyclass collection
+
+db.Female_in_economyclass.find().pretty()
+
+//Update seats of female customers to available business class seats
+
+db.Ticket.update({"Cust_Id":"6"},{$set: {"SeatNo": "B1"}})
+db.Ticket.update({"Cust_Id":"12"},{$set: {"SeatNo": "B3"}})
+
+//To check the result
+db.Ticket.find({"Cust_Id":"6","FlighID":"AE6770"},{"Cust_Id":1,"Name":1,"SeatNo":1,"FlighID":1,"_id":0})
+db.Ticket.find({"Cust_Id":"12","FlighID":"AE6770"},{"Cust_Id":1,"Name":1,"SeatNo":1,"FlighID":1,"_id":0})
+
+__________________________________________________________________________________________________________________________________________________
+
+
+###Rescheduling ###
+
+//To change time for  Flight no- 5699
+
+db.Flight.update({"Time_Planned" : "14 Hrs","Flight_ID" : "AE6770"},{$set: {"Time_Planned":"17 Hrs"}})
+
+//To search for flight with shortest duration and amount less than 250
+
+db.Flight.aggregate([{
+$match:
+{
+$and:
+[{"Flight_ID": "AE6770"},{"Price": {$lte:250}},{"Arrival_city": "Germany"}]
+}},
+{
+$project:
+{"Flight_ID": 1, "_id": 0, "Price": 1,"Time_Planned": 1 }},
+{ $sort:{ "Time_Planned": 1 } }
+]).pretty()
+
+//Book ticket for user
+db.Ticket.insertOne({"Cust_Id": "55","Name": "Chandler","Date of travel": "11-02-2022","Departure": "US","SeatNo": "E24","Free Luggage": "FALSE","FlighID": "AE6770"})
+
+//To check the result
+db.Ticket.find({"Name":"Chandler"}).pretty()
+
+
+
+
