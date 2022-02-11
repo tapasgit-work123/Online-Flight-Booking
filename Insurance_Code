@@ -1,0 +1,37 @@
+//Show how many insurances company 
+
+ LOAD CSV WITH HEADERS FROM 'file:///C:/Users/amrmo/Downloads/company1.csv' AS line 
+
+MERGE (a:company {name:line.company_name, id:line.company_id})  
+
+//Show how many customers do we have 
+
+LOAD CSV WITH HEADERS FROM 'file:///C:/Users/amrmo/Downloads/customer.csv' AS line 
+
+MERGE (a:customer {name:line.full_name, id:line.id, pasport:line.passport_id})  
+
+Update insurance company information: 
+
+MERGE(a:company {name : "APA"}) SET a.insurance_type ="passinger", a.price=15 
+
+MERGE(a:company {name : "PACIS"}) SET a.insurance_type ="luggage", a.price=8 
+
+MERGE(a:company {name : "PACIS"}) SET a.insurance_type _2 ="luggage+passenger", a.price=20 
+
+MERGE(a:company {name : "KMK"}) SET a.insurance_type ="passenger", a.price=17 
+
+ 
+
+Make a new relation: 
+
+CREATE (a:customer{name:"Malek Moursi"})-[h:Have_insurance_in{data:" 25/01/2021",period_day:30  
+
+}]->(b:company{name:"KMK"}) 
+
+CREATE (a:customer{name:"Alex"})-[h:Have_insurance_in{data:" 15/11/2021",period_day:60   
+
+}]->(b:company{name:"APA"}) 
+
+CREATE (a:customer{name:"Sara"})-[h:Have_insurance_in{data:" 15/11/2021",period_day:60  ,type:"luggage" 
+
+}]->(b:company{name:"PACIS"}) 
